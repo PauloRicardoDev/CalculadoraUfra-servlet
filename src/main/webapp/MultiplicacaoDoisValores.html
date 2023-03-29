@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Multiplicação</title>
+<link rel="stylesheet" href="/src/main/webapp/css/reset.css">
+<link rel="stylesheet" href="css/styleIndex.css">
+<script src="https://kit.fontawesome.com/4c221199e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="caixa">
+		<h1 class="caixa__titulo">Multiplicação <i class="fa-solid fa-xmark"></i></h1>
+		<h2 class="caixa__titulo__secundario">Vamos calcular</h2>
+		<p class="caixa__info">"Informe dois valores"</p>
+		<form class="form2" action="/calculadora/multiplicacaoServlet" method="POST">
+			<label class="form__label" for="valor1">Valor A</label> 
+			<input class="form__imput" type="text" id="valor1" name="valor1">
+			<label class="form__label" for="valor2">Valor B</label> 
+			<input class="form__imput" type="text" id="valor2" name="valor2">
+			<input type="submit" value="Enviar">
+		</form>
+		<a class="caixa__voltar" href="index.html"><i id="caixa__icon" class="fa-solid fa-arrow-rotate-left"></i></a>
+	</div>
+</body>
+</html>
